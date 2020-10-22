@@ -28,15 +28,19 @@ class Bacteria{
     myColor = color(162,245,40);//glow in the dark color
     //myColor = color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
   }
-  void move(){
+ void move(){
     if(mouseX>x){
     x= x+(int) (Math.random() * 8)-3;}
-    else{
-    x= x+(int) (Math.random() * 6)-3;}
+    else if(mouseX == 0){
+    x= x+(int) (Math.random() * 7)-3;}
+    else{x= x+(int) (Math.random() * 6)-3;}
     if(mouseY>y){
-    y = y+(int) (Math.random() * 8)-3;}
+    y = y+((int) (Math.random() * 8)-3);}
+    else if(mouseY == 0){
+    y = y+((int) (Math.random() * 7)-3);}
     else{
-    y = y+(int) (Math.random() * 6)-3;}  
+      y = y+((int) (Math.random() * 6)-3);}
+      
   }
   void show(){
     fill(myColor);
