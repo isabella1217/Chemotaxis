@@ -2,6 +2,8 @@
 Bacteria [] bac;
 void setup(){
   size(600,600);
+  textAlign(CENTER,CENTER);
+  noLoop();
   
  
   bac = new Bacteria [200];
