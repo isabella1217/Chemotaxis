@@ -33,9 +33,9 @@ class Bacteria{
     else{
     x= x+(int) (Math.random() * 6)-3;}
     if(mouseY>y){
-    y = y+(int) (int) (Math.random() * 8)-3;}
+    y = y+(int) (Math.random() * 8)-3;}
     else{
-    y = y+(int) (int) (Math.random() * 6)-3;}  
+    y = y+(int) (Math.random() * 6)-3;}  
   }
   void show(){
     fill(myColor);
